@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Bootstrap Order Details Table with Search Filter</title>
+<link rel="stylesheet" href="test.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+</head>
+<body>
+    
+    
+    <div class="panel">
+        <div class="panel-body">
+            <div class="">
+            <table class="table table-striped table-hover">
+                <thead class="header-sticky">
+                    <tr>
+                        <th scope="col">Status</th>
+                        <th scope="col">From</th>
+                        <th scope="col">To</th>
+                        <th scope="col">Currency</th>
+                        <th scope="col" class="text-right">Amount</th>
+                        <th scope="col" class="text-right">Execution Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Status"><span class="label label-success">Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-danger">Rejected</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Ccy">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Ccy">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Ccy">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Status"><span class="label label-warning">Partially Authorized</span></td>
+                        <td data-label="From">ABN Amro Business NL<small class="table-small">NL61ABNA234556780</small></td>
+                        <td data-label="To">T-Mobile<small class="table-small">NL54INGB123456789</small></td>
+                        <td data-label="Currency">EUR</td>
+                        <td data-label="Amount" class="text-right">3.000,00</td>
+                        <td data-label="Execution Date" class="text-right">20/12/2016</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>                                		

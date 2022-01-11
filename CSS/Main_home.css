@@ -1,0 +1,288 @@
+:root {
+  --Body_color: #e9e5dc;
+  --sub-color: #eac059;
+  --full_width: 100%;
+  --slider_height: 80%;
+  --font-size: 16px;
+  --slider-opacity: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--Body_color);
+}
+
+/* Start of header part 1 */
+
+.sticky {
+  position: sticky; /* Also it could be >--> position: fixed; */
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 35%;
+}
+
+.slogan {
+  width: 15%;
+  position: absolute;
+  margin: 1% auto;
+}
+
+.vision img {
+  height: 8vh;
+  width: auto;
+}
+
+.lang svg {
+  background-color: rgb(199, 198, 198);
+}
+
+/* End of header part 1 */
+
+/* Start of header part 2 */
+.navbar {
+  z-index: +1;
+}
+
+.navbar-nav {
+  margin-bottom: 7%;
+  font-size: calc(var(--font-size) + 5px);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bottom {
+  border-right: 2px solid var(--sub-color);
+}
+
+.navbar-dark .navbar-nav .bottom.active,
+.navbar-dark .navbar-nav .show > .bottom {
+  /* to make the active nav word "home" is higlighted by defult and we get the class name from -inspect elements -- style section down */
+
+  color: #000;
+  background-color: var(--sub-color);
+}
+
+.navbar-dark .navbar-nav .bottom,
+.navbar-dark .navbar-nav .show > .bottom {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .bottom:hover {
+  background: var(--sub-color);
+  color: #000;
+  transition: 1s all ease-in-out;
+}
+
+.dropdown .dropdown-menu {
+  background-color: rgb(22, 14, 14);
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  color: chocolate;
+}
+
+/*start signin/signup anchor*/
+
+.div-signin-signup {
+  margin-top: 80px;
+}
+
+.div-signin-signup a {
+  color: black;
+  text-decoration: none;
+  border: 0px;
+}
+
+.div-signin-signup a:hover {
+  background-color: #eac059;
+  color: snow;
+  transition: 0.4s all ease-in-out;
+  border: 0px;
+}
+/*end signin/signup anchor*/
+
+/* End of header part 2 */
+
+/* START OF SEARCH BAR */
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 50px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  color: cornsilk;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 30px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 5px;
+  width: 250px;
+  caret-color: #eac059;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: #e9e5dc;
+  color: black;
+}
+
+.search_icon {
+  height: 30px;
+  width: 30px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+/*SEARCH BAR ENDS*/
+
+/* End of Header */
+
+/* Main Slider Starts */
+
+.slider {
+  position: relative;
+  background-color: #000;
+}
+
+.caption {
+  background: var(--slider-opacity);
+  height: 20vh;
+}
+
+.caption .button {
+  color: whitesmoke;
+}
+
+.caption .button:hover {
+  color: #000;
+  background-color: var(--Body_color);
+  transition: 0.5s all ease-in-out;
+}
+
+.icon {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  padding-left: 1%;
+}
+
+/* Main Slider Ends */
+
+/* News cards Starts */
+
+.headlines {
+  margin: 4% auto;
+}
+
+.card-body {
+  display: none;
+}
+
+.headlines .caption {
+  background: transparent;
+  margin-bottom: -2%;
+}
+
+.headlines .caption h2 {
+  font-weight: bolder;
+  font-size: calc(var(--font-size) + 20px);
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.headlines .cardstyle {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  padding: 1% 1%;
+}
+
+.headlines .cards {
+  padding-bottom: 3%;
+}
+
+.headlines .cards img {
+  background: #000;
+  opacity: 0.8;
+  height: 30vh;
+}
+
+.headlines .cards h5 {
+  width: 100%;
+  background: var(--slider-opacity);
+  color: whitesmoke;
+  margin: 1% auto;
+}
+
+.headlines .cards .buttons {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.headlines .cards .buttons a,
+.headlines .cards .buttons button {
+  color: var(--Body_color);
+  font-size: var(--font-size);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+}
+
+.headlines .cards .buttons a:hover,
+.headlines .cards .buttons button:hover {
+  color: #353b48;
+  background-color: var(--Body_color);
+  transition: 1s ease-in-out;
+}
+
+/* start of footer */
+footer {
+  background: linear-gradient(rgba(34, 51, 85, 0.8), rgba(34, 51, 85, 0.8));
+  width: var(--full_width);
+  height: auto;
+  color: white;
+  border: none;
+  position: relative;
+  padding-bottom: 1%;
+}
+
+.footer-aast {
+  width: 13%;
+}
+
+.footer-img2 {
+  position: absolute;
+  width: 11%;
+  margin: 4% 45% 1% 45%;
+}
+
+.bottom-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-nav {
+  padding: 1% 2%;
+}
+
+.bottom-nav ul {
+  border-bottom: 2px solid var(--Body_color);
+  border-width: 10%;
+}

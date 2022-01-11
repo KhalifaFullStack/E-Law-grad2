@@ -1,0 +1,231 @@
+:root {
+  --Body_color: #e9e5dc;
+  --sub-color: #eac059;
+  --full_width: 100%;
+  --slider_height: 80%;
+  --font-size: 16px;
+  --slider-opacity: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-image: url("../pics/main/header-main1.jfif"),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Start of header part 1 */
+
+.sticky {
+  position: sticky; /* Also it could be >--> position: fixed; */
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 35%;
+}
+
+.slogan {
+  width: 15%;
+  position: absolute;
+  margin: 1% auto;
+}
+
+.vision img {
+  height: 8vh;
+  width: auto;
+}
+
+.lang svg {
+  background-color: rgb(199, 198, 198);
+}
+
+/* End of header part 1 */
+
+/* Start of header part 2 */
+.navbar {
+  z-index: +1;
+}
+
+.navbar-nav {
+  margin-bottom: 7%;
+  font-size: calc(var(--font-size) + 5px);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bottom {
+  border-right: 2px solid var(--sub-color);
+}
+
+.navbar-dark .navbar-nav .bottom.active,
+.navbar-dark .navbar-nav .show > .bottom {
+  /* to make the active nav word "home" is higlighted by defult and we get the class name from -inspect elements -- style section down */
+
+  color: #000;
+  background-color: var(--sub-color);
+}
+
+.navbar-dark .navbar-nav .bottom,
+.navbar-dark .navbar-nav .show > .bottom {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .bottom:hover {
+  background: var(--sub-color);
+  color: #000;
+  transition: 1s all ease-in-out;
+}
+
+.dropdown .dropdown-menu {
+  background-color: rgb(22, 14, 14);
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  color: chocolate;
+}
+
+/*start signin/signup anchor*/
+
+.div-signin-signup {
+  margin-top: 80px;
+}
+
+.div-signin-signup a {
+  color: black;
+  text-decoration: none;
+  border: 0px;
+}
+
+.div-signin-signup a:hover {
+  background-color: #eac059;
+  color: snow;
+  transition: 0.4s all ease-in-out;
+  border: 0px;
+}
+/*end signin/signup anchor*/
+
+/* End of header part 2 */
+
+/* START OF SEARCH BAR */
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 50px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  color: cornsilk;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 30px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 5px;
+  width: 250px;
+  caret-color: #eac059;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: #e9e5dc;
+  color: black;
+}
+
+.search_icon {
+  height: 30px;
+  width: 30px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+/*SEARCH BAR ENDS*/
+
+/* End of Header */
+
+.container {
+  margin: 10% auto 5%;
+  align-content: center;
+}
+
+.card {
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.form-group {
+  margin-bottom: 5%;
+}
+
+.remember {
+  margin-bottom: 5%;
+}
+
+.card-header h3 {
+  color: white;
+}
+
+.input-group-prepend span {
+  width: 50px;
+  background-color: #ffc312;
+  color: black;
+  border: 0 !important;
+}
+
+input:focus {
+  outline: 0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
+}
+
+.remember {
+  color: white;
+}
+
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.login_btn {
+  color: black;
+  background-color: #ffc312;
+  width: 100px;
+}
+
+.login_btn:hover {
+  color: black;
+  background-color: white;
+}
+
+.links {
+  color: white;
+}
+
+.links a {
+  margin-left: 4px;
+}
+
+

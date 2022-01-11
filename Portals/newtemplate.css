@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+
+  *,::before,::after{
+    box-sizing: border-box;
+  }
+  
+  body{
+    position: relative;
+    margin: -16px 0 0 0;
+    padding: 0 16px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    transition: .5s;
+  }
+    
+  main{
+    min-height: 100%;
+    padding: 5px 14px 14px 14px;
+    color: #201f2b;
+  }
+  
+  
+  .card_detail table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-left: 5px;
+  }
+  
+  .card_detail table tr:nth-child(odd) {
+    background-color: #f8f8fb;
+  }
+  
+  .card_detail table th {
+    background-color: #f8f8fb;
+    position: sticky;
+    top: 0;
+  }
+  
+.detail_header h2{
+  margin-left: 5px;
+}
+
+  .card_detail table th,
+  .card_detail table td {
+    padding: 12.8px 3.2px;
+    text-align: left;
+    min-width: 102px;
+    font-size: 14px;
+  }
+  
+  .card_detail table tr:hover {
+    background-color: #f2f2f2;
+    border-bottom: 2px solid #2d2b98;
+  }
+  
+  .card_detail table tr td:nth-child(6),
+  .card_detail table tr td:nth-child(12) {
+    min-width: 110px;
+  }
+   
+  .status {
+    padding: 3px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 11px;
+  }
+  
+  .status.pending{
+    background-color: #fff2d7;
+    color: #ffa705;
+  }
+  
+  .status.approved{
+    background-color: #dcedde;
+    color: #37aa38;
+  }
+  
+  .status.denied{
+    background: #F5B7B1;
+    color: #C0392B;
+  }
+  
+  
+  /* ===== MEDIA QUERIES=====*/
+  @media screen and (min-width: 768px){
+    body{
+      margin: calc(-16px + 16px) 0 0 0;
+      padding-left: calc(-30px + 32px);
+    }
+  
+  
+  }
+  
+  
+  
+  

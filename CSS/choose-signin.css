@@ -1,0 +1,67 @@
+* {
+  margin: 0%;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../pics/main/lawsuit-court.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  margin-top: 11%;
+}
+
+.container h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: #eac059;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5%;
+}
+
+.cards {
+  width: 20%;
+  text-align: center;
+  color: #eac059;
+  margin: 1% auto;
+}
+
+.card {
+  background-color: black;
+}
+
+.cards a {
+  background-color: black;
+  border: 1px solid chocolate;
+  color: #eac059;
+}
+
+.cards a:hover,
+.back a:hover {
+  background-color: #eac059;
+  color: black;
+  border: none;
+  transition: 1s all ease-in-out;
+}
+
+.cards .card img {
+  width: 40%;
+  margin: auto;
+  margin-top: 0.5%;
+}
+
+.back {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 9.3%;
+}
+
+.back a {
+  text-align: center;
+  color: #eac059;
+  text-decoration: none;
+  background-color: black;
+  border: 1px solid chocolate;
+}

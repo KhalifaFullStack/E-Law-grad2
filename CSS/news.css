@@ -1,0 +1,258 @@
+:root {
+  --Body_color: #e9e5dc;
+  --sub-color: #eac059;
+  --full_width: 100%;
+  --slider_height: 80%;
+  --font-size: 16px;
+  --slider-opacity: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #e9e5dc;
+}
+
+/* Start of header part 1 */
+
+.sticky {
+  position: sticky; /* Also it could be >--> position: fixed; */
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  width: 35%;
+}
+
+.slogan {
+  width: 15%;
+  position: absolute;
+  margin: 1% auto;
+}
+
+.vision img {
+  height: 8vh;
+  width: auto;
+}
+
+.lang svg {
+  background-color: rgb(199, 198, 198);
+}
+
+/* End of header part 1 */
+
+/* Start of header part 2 */
+.navbar {
+  z-index: +1;
+}
+
+.navbar-nav {
+  margin-bottom: 7%;
+  font-size: 21px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.bottom {
+  border-right: 2px solid #eac059;
+}
+
+.navbar-dark .navbar-nav .bottom.active,
+.navbar-dark .navbar-nav .show > .bottom {
+  /* to make the active nav word "home" is higlighted by defult and we get the class name from -inspect elements -- style section down */
+
+  color: #000;
+  background-color: var(--sub-color);
+}
+
+.navbar-dark .navbar-nav .bottom,
+.navbar-dark .navbar-nav .show > .bottom {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .bottom:hover {
+  background: #eac059;
+  color: #000;
+  transition: 1s all ease-in-out;
+}
+
+.dropdown .dropdown-menu {
+  background-color: rgb(22, 14, 14);
+}
+
+.dropdown .dropdown-menu .dropdown-item {
+  color: chocolate;
+}
+
+/* End of header part 2 */
+
+/* START OF SEARCH BAR */
+
+.searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 50px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.search_input {
+  color: cornsilk;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 30px;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_input {
+  padding: 0 5px;
+  width: 250px;
+  caret-color: #eac059;
+  transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search_icon {
+  background: #e9e5dc;
+  color: black;
+}
+
+.search_icon {
+  height: 30px;
+  width: 30px;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+
+/*SEARCH BAR ENDS*/
+
+/*start signin/signup anchor*/
+
+.div-signin-signup {
+  margin-top: 80px;
+}
+
+.div-signin-signup a {
+  color: black;
+  text-decoration: none;
+  border: 0px;
+}
+
+.div-signin-signup a:hover {
+  background-color: #eac059;
+  color: snow;
+  transition: 0.4s all ease-in-out;
+  border: 0px;
+}
+/*end signin/signup anchor*/
+
+/* End of Header */
+
+/* Main Slider Starts */
+
+.slider {
+  position: relative;
+  background-color: #000;
+}
+
+.caption {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 20vh;
+}
+
+.caption .button {
+  color: whitesmoke;
+}
+
+.caption .button:hover {
+  color: #000;
+  background-color: #e9e5dc;
+  transition: 0.5s all ease-in-out;
+}
+
+.icon {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  padding-left: 1%;
+}
+
+/* END OF NAVIGATION and HEADER  */
+
+/* START OF NEWS */
+
+.row {
+  margin: 5% auto 5%;
+}
+
+.row .title {
+  text-align: center;
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+}
+
+.row .picture img {
+  width: 20%;
+}
+
+.row .news {
+  width: 100%;
+  margin: 3% auto 3%;
+}
+
+.row .news .headline {
+  width: 70%;
+  margin-left: 2%;
+  color: #5f7030;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: lighter;
+  border-bottom: 2px dotted #5f7030;
+}
+
+/* start of footer */
+
+footer {
+  background: linear-gradient(rgba(34, 51, 85, 0.8), rgba(34, 51, 85, 0.8));
+  width: 100%;
+  height: auto;
+  color: white;
+  border: none;
+  position: relative;
+  padding-bottom: 1%;
+}
+
+.footer-aast {
+  width: 13%;
+}
+
+.footer-img2 {
+  position: absolute;
+  width: 11%;
+  margin: 4% 45% 1% 45%;
+}
+
+.bottom-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bottom-nav {
+  padding: 1% 2%;
+}
+
+.bottom-nav ul {
+  border-bottom: 2px solid #e9e5dc;
+  border-width: 10%;
+}

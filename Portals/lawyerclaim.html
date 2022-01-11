@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Lawyer Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="lawyerclaim.css" />
+</head>
+<body>
+    <!--left bar start-->
+    <input type="checkbox" id="sidebar_toggle">
+    <div class="sidebar">
+        <div class="sidebar_header">
+            <h3 class="brand"> 
+                <span>Lawyer Portal</span>
+            </h3> 
+            <label for="sidebar_toggle"><i class="fa fa-bars nav_btn"></i></label>
+        </div>
+        
+        <ul class="sidebar_menu">
+        <li>
+          <a href="lawyerdash.html">
+            <i class="fas fa-desktop"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="active">
+            <i class="far fa-file-alt"></i>
+            <span class="links_name">Claim</span>
+          </a>
+        </li>
+        <li>
+          <a href="lawyerdefend.html">
+            <i class="fas fa-shield-alt"></i>
+            <span class="links_name">Defend</span>
+          </a>
+        </li>
+        <li>
+          <a href="payment.html">
+            <i class="far fa-credit-card"></i>
+            <span class="links_name">Make Payment</span>
+          </a>
+        </li> 
+        <li>
+          <a href="#">
+            <i class="fab fa-rocketchat"></i>
+            <span class="links_name">Requests</span>
+          </a>
+        </li>
+        <li>
+          <a href="settings.html">
+            <i class="fas fa-cog"></i>
+            <span class="links_name">Settings</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="#">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--left bar end-->
+
+    <!--nav bar start-->
+    
+    <div class="main_content">
+        
+        <header>
+            <div class="search_wrapper">
+                <i class="fas fa-search"></i>
+                <input type="search" placeholder="Search">
+            </div>
+            
+            <div class="social_icons">
+                <a href="#"><i class="fas fa-power-off"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <div></div><h4>Mohanad Mohamed</h4>
+            </div>
+        </header>
+
+
+        <!--nav bar end-->
+        <!--main content start-->
+        
+        <main>
+          <div class="form_wrapper">
+  <div class="form_container">
+    <div class="title_container">
+      <h2>Claim Form</h2>
+    </div>
+    <div class="row clearfix">
+      <div class="">
+        <form>
+          <div class="input_field">
+          <p style="font-size: 14.5px; font-weight: 350;">Download the form, scan then re-upload<br>Please Attach all documents necessary</p></div>
+
+          <div class="input_field">
+            <a href="#" class="download_btn">Download Form <i class="fas fa-download"></i></a>
+          </div>
+
+          <div class="input_field">
+            
+            <input type="file" id="img" name="img" accept="image/*">
+          </div>
+           
+          
+          <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Lawyer Name" />
+              </div>
+              <div class="input_field"> <span><i class="far fa-id-card"></i></span>
+                <input type="text" name="name" placeholder="Lawyer ID" />
+              </div>
+              <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                <input type="text" name="name" placeholder="Claimer Name" />
+              </div>
+              <div class="input_field"> <span><i class="far fa-id-card"></i></span>
+                <input type="text" name="name" placeholder="Claimer ID" />
+              </div>
+              
+
+
+
+         
+          </div>
+              <div class="input_field radio_option">
+              <input type="radio" name="radiogroup1" id="rd1">
+              <label for="rd1">Male</label>
+              <input type="radio" name="radiogroup1" id="rd2">
+              <label for="rd2">Female</label>
+              </div>
+              
+            <div class="input_field checkbox_option">
+              <input type="checkbox" id="cb1">
+          <label for="cb1">I agree with terms and conditions</label>
+            </div>
+            
+          <input class="button" type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+        </main>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

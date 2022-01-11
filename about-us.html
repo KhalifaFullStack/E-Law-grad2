@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us page html</title>
+
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #eac059;
+            margin: 0;
+            padding: 0;
+            color: #eac059;
+        }
+
+        .navbar {
+            display: flex;
+            width: 100%;
+            box-shadow: 0 0 5px black;
+            text-align: center;
+            height: 40px;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            color: black;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: black;
+            margin: 10px auto;
+            padding: 5px 30px;
+            width: 800px;
+            box-shadow: 0 0 5px black;
+        }
+
+        .hr {
+            display: flex;
+            align-items: center;
+        }
+
+        hr {
+            width: 30px;
+            height: 1px;
+            background: black;
+            margin: 0 15px;
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        .mission-txt {
+            font-size: 18px;
+            font-weight: 500px;
+            font-style: italic;
+            margin-top: 0;
+        }
+
+        div img {
+            width: 150px;
+            filter: drop-shadow(0 10px 5px black);
+        }
+
+        p {
+            text-align: justify;
+            color: #eac059;
+            text-align: center;
+        }
+
+        .faculties {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .unit {
+            margin: 25px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .unit img {
+            border-radius: 100px;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+
+        .unit p {
+            text-align: left;
+            margin: 2px;
+        }
+
+        .unit p:first-of-type {
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+
+        @media screen and (max-width: 820px) {
+            .wrapper {
+                width: 80%;
+                padding: 5px 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- place your nav bar here -->
+    <div class="navbar">
+        جمهورية مصـــــــــر العربية
+    </div>
+
+    <div class="container">
+
+        <div class="wrapper">
+            <div class="hr">
+                <hr>
+                <h2>بوابة وزارة العدل الالكترونية</h2>
+                <hr>
+            </div>
+
+        </div>
+
+        <div class="wrapper">
+            <h2>About Us</h2>
+            <div>
+                <img src="logo.png">
+                <h1> وزارة العدل المصرية </h1>
+                <br>
+                <p>هي المظلة الإدارية للجهات والهيئات القضائية، وتختص بتنظيم وتطوير شئون العدالة وعمل الأجهزة المعاونة
+                    للجهات القضائية والرقابة عليها (الخبراء – الطب الشرعي – مصلحة الشهر العقاري والتوثيق)، كما تهدف إلى
+                    تعزيز دور القضاء بما يكفل أداء رسالته في إقامة العدل بين الناس وحماية حقوقهم. </p>
+                <br>
+            </div>
+
+            <h1> نشأة وزارة العدل </h1>
+            <br>
+            <p>اتفق المؤرخون عند تناول تاريخ القضاء المصري على أن أول إدارة رسمية قضائية بمدلولها الحالي "وزارة العدل"
+                يرجع تاريخها إلى عهد الفراعنة، وكانت الدولة المصرية القديمة أول من سنت للعدل منظومة تطورت من حيث الشكل
+                والهيكل والمفهوم على مر الزمان.</p>
+            <br>
+            <p>
+                وقام مُحمد علي عام 1837 ببناء دولة حديثة قوية تقوم على دعائم العدل والقانون فأنشأ سبعة دواوين، أهمها
+                الديوان العالي، الذي أمسك كافة الاختصاصات ومن بينها الاختصاص القضائي، وفي عام 1840 قام بتأسيس جمعية
+                الحقانية وهي أول مؤسسة قضائية حديثة تعرفها مصر، وضمت في اختصاصاتها التشريع، واعتُبِرت هيئة استشارية يحيل
+                لها الوالي القضايا التي تم الحكم فيها لإعادة النظر في تلك القضايا مرة أخرى
+            </p>
+            <br>
+            <p>
+                وفي عهد عباس بن محمد علي تم إنشاء مجالس الأقاليم في عام 1852، وهى خمسة مجالس شملت مصر بالكامل.
+            </p>
+            <br>
+            <p>
+                وقام الخديوي إسماعيل عام 1863 بالتوسع في إنشاء المجالس فأصبح في كل قرية مجلس دعوى قروي، كما قام بتخصيص
+                مجلسي مصر والإسكندرية كمجالس استئنافية للأحكام، وأنشأ ديوان الحقانية ونقل تبعية كل المجالس إليه، وأسس
+                المجالس الابتدائية والاستئنافية وحدد اختصاصات كل منها لكن دون وجود تشريع واضح.
+            </p>
+            <br>
+            <p>
+                وفي عهد الخديوي توفيق تم إنشاء المحاكم المختلطة عام 1875، ثم تبعه إنشاء المحاكم الأهلية كنتيجة للمطالبة
+                بالمثل، ليُلغَى بذلك مجالس الأحكام.
+            </p>
+            <br>
+            <p>
+                ويبدأ النظام القضائي الحديث بانتهاء المحاكم المختلطة عام 1949، ويستمر التطوير في النظام على فترات، وحان
+                وقت التطوير التقني لمواكبة العصر
+            </p>
+            <br>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <h2>Our Team</h2>
+        <div class="faculties">
+            <div class="unit">
+                <img src="sameh.jpg" alt="">
+                <p>Ahmed Sameh</p>
+                <p>AAST Student</p>
+
+            </div>
+            <div class="unit">
+                <img src="Khalifa.jpg" alt="">
+                <p>Ahmed Khalifa</p>
+                <p>AAST Student</p>
+
+            </div>
+
+            <div class="unit">
+                <img src="mohamed.jpg" alt="">
+                <p>Mohanad Mohamed</p>
+                <p>AAST Student</p>
+
+            </div>
+
+
+            <div class="unit">
+                <img src="mohanad.jpg" alt="">
+                <p>Mohamed Abdelaziz</p>
+                <p>AAST Student</p>
+
+            </div>
+
+
+            <div class="unit">
+                <img src="fares.jpg" alt="">
+                <p>Fares Ali</p>
+                <p>AAST Student</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
